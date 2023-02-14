@@ -128,27 +128,23 @@ video {
 #top3 {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 50%;
+  margin-top: 5%;
 }
 
 .image-col {
-/*flex: 1;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column; */
+flex: 1;
+text-align: center;
 width: 50%;
 }
 
 .button-col {
-  /*   flex: 1;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column; */
+  flex: 1;
+  text-align: center;
+  flex-direction: column;
   width: 50%;
   }
 
 #image {
   width: 100%;
-
 }

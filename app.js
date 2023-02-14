@@ -1,25 +1,18 @@
 $("#contact-form").validate({
     rules: {
-        fname: "required",
-        lname: "required",
+        name: "required",
+        message: "required",
         email: {
             required: true,
             email: true
   }}});
 
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2");
-const button3 = document.getElementById("button3");
-const image = document.getElementById("image");
-
-button1.addEventListener("click", function () {
-  image.src = 'resources/rpk.jpg';
-});
-
-button2.addEventListener("click", function () {
-  image.src = 'resources/taqv.jpg';
-});
-
-button3.addEventListener("click", function () {
-  image.src = 'resources/fennec.jpg';
-});
+function button1listener(){
+  document.getElementById("image").src="resources/rpk.jpg";
+}
+function button2listener(){
+  document.getElementById("image").src="resources/fennec.jpg";
+}
+function button3listener(){
+  document.getElementById("image").src="resources/taqv.jpg";
+}
