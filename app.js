@@ -1,11 +1,14 @@
-$("#contact-form").validate({
+$(document).ready(function () {
+  $("#contact-form").validate({
     rules: {
         name: "required",
         message: "required",
         email: {
             required: true,
             email: true
-  }}});
+    }
+  }
+})});
 
 function button1listener(){
   document.getElementById("image").src="resources/rpk.jpg";
