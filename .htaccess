@@ -1,0 +1,6 @@
+AuthName Intern 
+AuthType KerberosV5 
+SSLRequireSSL 
+<Limit GET POST> 
+require user svph2118 djson
+</Limit> 
