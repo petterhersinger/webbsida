@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   nav {
       flex-direction: column;
       align-items: center;
@@ -11,6 +11,37 @@
   nav li {
       margin-right: 0;
       margin-bottom: 10px;
+    }
+  video {
+      width: 100%;
+    }
+  #top3 {
+      display: flex;
+      flex-direction: column;
+    }
+  .image-col,
+  .button-col {
+      width: 50%;
+    }
+  }
+
+@media print {
+  header, nav, video {
+        display: none;
+    }
+
+  article, section, main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+  h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+  p, ul, ol, dl, pre, table {
+        page-break-inside: avoid;
     }
   }
 
